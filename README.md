@@ -76,3 +76,6 @@ react-native-demo-app/src/theme/ostsdk
 | ost-sdk-content-config.js | Please refer to [Content Config Android](https://github.com/ostdotcom/ost-wallet-sdk-android/blob/release-2.3/documentation/ContentConfig.md)/[Content Config iOS](https://github.com/ostdotcom/ost-wallet-sdk-ios/blob/release-2.3/documentation/ContentConfig.md) documentation. |
 | ost-sdk-settings-config.js | Please refer to [OstWallet Settings Configuration](https://github.com/ostdotcom/ost-wallet-sdk-react-native/blob/develop/documentation/OstWalletSettings.md) documentation. |
 | ost-sdk-transaction-config.js | Please refer to [OstTransactionHelper](https://github.com/ostdotcom/ost-wallet-sdk-react-native/blob/develop/documentation/OstTransactionHelper.md) and [OstTransactionConfig](https://github.com/ostdotcom/ost-wallet-sdk-react-native/blob/develop/documentation/OstTransactionConfig.md) documentation. |
+
+
+* <b> Starter App [integration](./documentation/login.md)</b>

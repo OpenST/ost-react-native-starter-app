@@ -1,5 +1,4 @@
 import {appProvider} from "../helper/AppProvider";
-import {Alert} from "react-native";
 import NavigationService from "../services/NavigationService";
 import {OstWalletSdk} from '@ostdotcom/ost-wallet-sdk-react-native';
 import BaseApi from "../services/api/BaseApi";
@@ -137,11 +136,6 @@ class CurrentUser {
             await BaseApi.clearCookies();
             NavigationService.navigate("IntroScreen", {"isAutoLogout": true});
     }, 500);
-  }
-
-  async isUserStatusActivated() {
-    let userStatus = await this.getOstUserStatus();
-    return userStatus.toUpperCase() === 'CREATED';
   }
 
   async isUserStatusActivated() {
