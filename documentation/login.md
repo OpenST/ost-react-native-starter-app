@@ -2,7 +2,7 @@
 
 By default the app is integrated with Mappy client which is a demo app server. To integrate with your own app server you will require some changes as follows. 
 
-## Changes will be required in src/helper/AppProvides which takes the config from demo-server-config.json
+## Changes will be required in src/helper/AppProvider which takes the config from demo-server-config.json
   
    - `getTokenName`
 
@@ -211,4 +211,3 @@ SignUp/Login complete code can be found in file src/models/CurrentUser.js.
    - `getTokenHolderAddress` returns token holder address.
 
 More functions can be found in this [file](https://github.com/ostdotcom/ost-react-native-starter-app/blob/readme_update/src/models/CurrentUser.js).  
-       
