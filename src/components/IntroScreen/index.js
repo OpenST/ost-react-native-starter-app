@@ -61,12 +61,16 @@ class IntroScreen extends PureComponent {
 
 
     let platformUrl = appProvider.getSaasApiEndpoint();
-    OstWalletSdk.initialize(platformUrl, ost_wallet_sdk_config, (err , success ) => {});
+    OstWalletSdk.initialize(platformUrl, ost_wallet_sdk_config, (err , success ) => {
+      if (err) {
+        console.error('IntroScreen', err);
+      }
+    });
 
     if ( this.props.navigation.getParam('isAutoLogout') ) {
-      this.showAlertForLoggedOut()
+      this.showAlertForLoggedOut();
       return;
-    } 
+    }
 
     if (CurrentUser.getUserData()) {
      this.onSetupDeviceSuccess();

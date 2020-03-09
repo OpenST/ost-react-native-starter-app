@@ -196,18 +196,5 @@ To change the UI or code as per your changes the file can be found in src/compon
 
 ## SignUp/Login functional flow.
 
-SignUp/Login complete code can be found in file src/models/CurrentUser.js.
-
-   - `initialize` demo app mappy client user login is server side cookie based. If the user is logined and app is killed and relaunced the `getLoggedInUser` is called.
-
-   - `getUserData` returns user object 
-
-   - `getUserId` returns ost user uuid.
-
-   - `getTokenId` returns user token id.
-
-   - `getAppUserId` returns your application user id.
-
-   - `getTokenHolderAddress` returns token holder address.
-
-More functions can be found in this [file](https://github.com/ostdotcom/ost-react-native-starter-app/blob/readme_update/src/models/CurrentUser.js).  
+In both the flows OstWalletSdk is initialised before initiating SignUp/Login flow. Ref `src/components/LoginScreen/LoginScreenViewModel.js` `setupUser` method.</br>
+After successful flow completion, OstWalletSdk's `setupDevice` method is called, via helper class `src/helper/OstSetupDeviceHelper/OstSetupDevice.js`.</br>
