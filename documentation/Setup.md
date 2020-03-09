@@ -25,7 +25,7 @@ cd ios
 pod install
 ```
 
-* edit the [cartfile](../ios/cartfile):
+* edit the cartfile
 ```
 github "ostdotcom/ost-wallet-sdk-ios" == 2.4.0
 ```
