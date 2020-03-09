@@ -20,7 +20,11 @@ class LoginScreenViewModel {
   setupUser(userName, password) {
 
     let platformUrl = appProvider.getSaasApiEndpoint();
-    OstWalletSdk.initialize(platformUrl, ost_wallet_sdk_config, (err , success ) => {});
+    OstWalletSdk.initialize(platformUrl, ost_wallet_sdk_config, (err , success ) => {
+      if (err) {
+        console.error('LoginScreenViewModel', err);
+      }
+    });
     if (this.isSignupView) {
       return this.createAccount(userName, password)
     }else {
