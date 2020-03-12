@@ -1,4 +1,4 @@
-= Integrate with your App server.
+= Integrate with your App server
 :doctype: book
 
 By default the app is integrated with Mappy client which is a demo app server.
