@@ -1,0 +1,18 @@
+= Custom Loader
+
+Developer can integrate custom loader by adding code in native(iOS/android).
+
+Custom loader is integrated in starter application:
+
+* iOS: link:../ios/Loader[here]
+* android: link:../android/app/src/customloader[here]
+
+== Modifications:
+
+* Developer can change assets of loader by modifying it.
+To modify custom loader please refer respective https://github.com/ostdotcom/ost-wallet-sdk-ios/blob/release-2.4/Samples/CustomLoader/OstMockCustomLoader.md#customize-loader[iOS] and https://github.com/ostdotcom/ost-wallet-sdk-android/blob/release-2.4/Samples/customloader/OstCustomLoader.md#customize-loader[android] readme.
++ (For iOS) size for loader can be modify by changing link:../ios/Loader/OstMockLoaderViewController.swift#L197[width] and link:../ios/Loader/OstMockLoaderViewController.swift#L198[height].
+current value is `30 pt`.
+* To modify error message of custom loader, developer needs to update `OstSdkMessages.json` file present in loader folder of link:../ios/Loader/OstSdkMessages.json[iOS] and link:../android/app/src/customloader/assets/OstSdkMessages.json[android]
+* By default, application doesn't wait for `activate user` and `transaction` workflow completion.
+But It can be changed as per application requirements, Please refer link:../ios/Loader/OstMockLoaderManager.swift#L25[for iOS] and link:../android/app/src/customloader/src/OstMockLoaderManager.java#L25[for android] +
